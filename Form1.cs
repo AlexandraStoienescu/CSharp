@@ -58,9 +58,9 @@ namespace FormsProject
             ch.Text = "Tipul imaginii";
             lstView.Columns.Add(ch);
 
-            ch = new ColumnHeader("Modified Date");
+            ch = new ColumnHeader("Data Modificarii");
             ch.Width = 200;
-            ch.Text = "Modified Date";
+            ch.Text = "Data Modificarii";
             lstView.Columns.Add(ch);
 
 
@@ -181,7 +181,7 @@ namespace FormsProject
             string key = chkLs.SelectedItem as string;
             string picture = imagesNameToPath[key];
            Image img = Image.FromFile(@"C:\Users\Alexandra\Pictures\" + picture);
-           //img.Image = Image.FromFile(@"C:\Users\Alexandra\Pictures\2.jpg");// + picture);
+          
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
